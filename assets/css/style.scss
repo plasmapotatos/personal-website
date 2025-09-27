@@ -5,3 +5,22 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+.icon {
+  height: 20px;
+  vertical-align: text-top;
+  margin-left: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contact-icons a {
+  color: black; /* default black */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.contact-icons a:hover {
+  color: gray; /* hover goes gray */
+}

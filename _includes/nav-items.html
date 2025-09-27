@@ -1,8 +1,14 @@
 <div class="nav-items">
-  {%- for path in include.paths -%}
-  {%- assign hyperpage = site.pages | where: "path", path | first -%}
-  {%- if hyperpage.title %}
-  <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
-  {%- endif -%}
-  {%- endfor %}
+  <!-- Section anchors on the homepage -->
+  <a class="nav-item" href="#work-experience">Work Experience</a>
+  <a class="nav-item" href="#research">Research</a>
+  <a class="nav-item" href="#contact">Contact</a>
+
+  <!-- Existing pages from nav_pages -->
+  <!-- {%- for path in include.paths -%}
+    {%- assign hyperpage = site.pages | where: "path", path | first -%}
+    {%- if hyperpage.title %}
+      <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
+    {%- endif -%}
+  {%- endfor -%} -->
 </div>
